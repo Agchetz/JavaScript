@@ -59,7 +59,7 @@ console.log(animals.shift());
 
 // FILTER function
 
-var items = [
+const items = [
     {name : "car", price : 300},
     {name : "bike", price:150},
     {name : "tv", price : 85},
@@ -68,14 +68,14 @@ var items = [
     {name : "house", price: 700}
 ]
 
-var filteredItems = items.filter((items) =>{
+const filteredItems = items.filter((items) =>{
     return items.price <= 100;
 })
 console.log (filteredItems);
 
 // MAP function 
 
-var items = [
+const items = [
     {name : "car", price : 300},
     {name : "bike", price:150},
     {name : "tv", price : 85},
@@ -83,14 +83,14 @@ var items = [
     {name : "dress", price : 30},
     {name : "house", price: 700}
 ]
-var itemsname = items.map((items) =>{
+const itemsname = items.map((items) =>{
     return items.name; //price
 })
 console.log (itemsname);
 
 // Find function
 
-var items = [
+const items = [
     {name : "car", price : 300},
     {name : "bike", price:150},
     {name : "tv", price : 85},
@@ -98,14 +98,14 @@ var items = [
     {name : "dress", price : 30},
     {name : "house", price: 700}
 ]
-var foundItem = items.find((items) =>{
+const foundItem = items.find((items) =>{
     return items.name === 'bike'; // .price === '300'
 })
 console.log (foundItem);
 
 // forEach function //similar to for loop
 
-var items = [
+const items = [
     {name : "car", price : 300},
     {name : "bike", price:150},
     {name : "tv", price : 85},
@@ -119,7 +119,7 @@ items.forEach((items) =>{
 
 // some // similar to filter but shows just true or false
 
-var items = [
+const items = [
     {name : "car", price : 300},
     {name : "bike", price:150},
     {name : "tv", price : 85},
@@ -127,14 +127,14 @@ var items = [
     {name : "dress", price : 30},
     {name : "house", price: 700}
 ]
-var lowPrice = items.some((items) =>{
+const lowPrice = items.some((items) =>{
     return items.price <= 100;
 })
     console.log(lowPrice)
 
 // every function // checks every element of the array and return true or false
 
-var items = [
+const items = [
     {name : "car", price : 300},
     {name : "bike", price:150},
     {name : "tv", price : 85},
@@ -142,7 +142,7 @@ var items = [
     {name : "dress", price : 30},
     {name : "house", price: 700}
 ]
-var lowPrice = items.every((items) =>{
+const lowPrice = items.every((items) =>{
     return items.price <= 1000;
 })
     console.log(lowPrice)
@@ -150,7 +150,7 @@ var lowPrice = items.every((items) =>{
 // reduce() function // reduce(previous , present)
 // it checks each and evry element of the array and does the function it is assigned of
 
-var items = [
+const items = [
     {name : "car", price : 300},
     {name : "bike", price:150},
     {name : "tv", price : 85},
@@ -158,13 +158,13 @@ var items = [
     {name : "dress", price : 30},
     {name : "house", price: 700}
 ]
-var total = items.some((currentTotal,items) =>{
+const total = items.some((currentTotal,items) =>{
     return items.price + currentTotal
 },0)
     console.log(total)
 
 //includes function 
 
-var items = [1,2,3,4,5]
-var include = items.includes(2) // It checks if the value of includes(2) is present in the array   
+const items = [1,2,3,4,5]
+const include = items.includes(2) // It checks if the value of includes(2) is present in the array   
 console.log(include)              // or not and returns true or false 
