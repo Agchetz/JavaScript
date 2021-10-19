@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Program</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .outterContainer{
+            width: 155px;
+            height: 40px;
+            background-color: aqua;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="outterContainer">
+        Car Model : Honda
+    </div>
+    
+</body>
+<script>
+    debugger
+const data = document.querySelector('div');
+
+data.addEventListener('click',params)
+    function params(){
+        let name = prompt("Enter a new name");
+        data.textContent = "Car model : " + name;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+  function createParagraph() {
+    let para = document.createElement('p');
+    para.textContent = 'You clicked the button!';
+    document.body.appendChild(para);
+  }
+
+  const buttons = document.querySelectorAll('button');
+
+  for(let i = 0; i < buttons.length ; i++) {
+    buttons[i].addEventListener('click', createParagraph);
+  }
+});
+</script>
+</html>
